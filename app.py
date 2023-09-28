@@ -170,6 +170,8 @@ if current_tab == "Data Source":
                 st.session_state.identifier_column = identifier_column
                 st.session_state.additional_columns = additional_columns
             # Check if necessary columns are in session_state before calling similarity function
+            
+            
             if all(key in st.session_state for key in ['text_column', 'identifier_column', 'additional_columns']):
                 similarity_func(df)
 
