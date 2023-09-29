@@ -179,7 +179,7 @@ if current_tab == "Data Source":
    
 
     if data_source == "Connect to Jira":
-        jira_url = st.text_input("Jira URL", "https://eigenltd.atlassian.net")
+        jira_url = st.text_input("Jira URL", "https://.atlassian.net")
         jira_email = st.text_input("Email", "tsitsino.dalakishvili@eigen.co")
         jira_token = st.text_input("Jira API Token", "", type="password")
         jql_query = st.text_area("JQL Query", "Sprint = 227 AND assignee in (5ae0553054919b2467109b28) ORDER BY Rank ASC")
